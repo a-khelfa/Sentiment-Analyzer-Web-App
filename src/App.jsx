@@ -279,7 +279,7 @@ const App = () => {
     // Initialisation de Firebase et gestion de l'authentification.
     useEffect(() => {
         try {
-            const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+            const firebaseConfig = JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG);
             if (!firebaseConfig) {
                 console.error("Firebase config is not available.");
                 setError("La configuration Firebase est manquante.");
@@ -413,7 +413,7 @@ const App = () => {
             generationConfig: generationConfig
         };
 
-        const apiKey = "";
+        const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
         
         try {
