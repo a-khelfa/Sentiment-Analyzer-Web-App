@@ -4,7 +4,7 @@
 
 Une application web moderne qui analyse le sentiment (positif, négatif ou neutre) de n'importe quel texte en utilisant l'API Gemini de Google. L'application conserve un historique de vos analyses et vous permet de partager vos résultats.
 
-![Aperçu de l'application Analyseur de Sentiment]((https://imgur.com/a/GGf58BS)) ---
+![Aperçu de l'application Analyseur de Sentiment](https://i.imgur.com/g0S3jS3.png)
 ## ## Fonctionnalités ✨
 * **Analyse de Sentiment en Temps Réel** : Obtenez une classification (Positif, Négatif, Neutre) et une explication détaillée grâce à l'IA.
 * **Historique des Analyses** : Toutes vos analyses sont sauvegardées et affichées dans une liste chronologique.
